@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" rossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="img/Logo-X1-2.png">
+
+    <title>X1 Consultoria | Chamados</title>
+
+<style>
+
+/* Import Google Fonts
+*************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Open+Sans&family=Roboto:ital,wght@0,300;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+  body {
+    background: transparent url("img/bg-01.png") no-repeat fixed right bottom / cover;
+    background-size: 600px 600px;
+    color: #5f5f5f;
+}
+
+    a {
+        text-decoration: none;
+        color: #820ad1 !important;
+    }
+
+    a:hover {
+        color: #ba10c2 !important;
+    }
+
+    h2 {
+      color: #820ad1;
+  }
+
+  
+
+    /* Nav */
+
+    .btn-menu {
+      color: black;
+    }
+
+    .nav-cell {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 170px;
+       padding: 5px;
+       outline: 1px solid #820ad1;
+       background: #fff;
+       text-align: center;
+       color: #fff;
+       z-index: 100;
+    }
+
+    .nav-cell {
+      display: none;
+    }
+
+    .btn {
+      display: none;
+    }
+
+
+   /* btn form */
+
+    input[type="submit"] {
+        width: 100px;
+        height: 36px;
+        border: 2px solid #9710de;
+        background-color: #820ad1;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #ba10c2;
+    }
+
+
+    /* Media-query
+    ***************/
+
+    @media screen and (max-width: 768px) {
+
+      body  {
+         background: none;
+      }
+
+      .col-md-6 {
+        margin-top: 5em;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .nav-principal {
+        display: none !important;
+      }
+
+      .btn {
+        display: block;
+        border: 1px solid #ba10c2;
+      }
+
+    }
+
+    
+
+
+</style>
+
+  </head>
+  <body>
+    <main class="container">
+        <header class="d-flex flex-row justify-content-between align-items-center pb-3 mb-4 border-bottom">
+           
+            <div class="px-2">
+             <img src="img/logo-x1-site-2.png">
+             <span class="fs-4 align-middle" >   /Chamados</span>
+           </div>
+
+           <nav class="nav nav-principal">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="index.html">Sobre</a>
+            <a class="nav-link" href="https://x1consultoria-dev-ed.my.site.com">Comunidade</a>
+          </nav>
+
+          <nav class="nav flex-column nav-cell" id="menu-vertical">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="index.html">Sobre</a>
+            <a class="nav-link" href="https://x1consultoria-dev-ed.my.site.com">Comunidade</a>
+            <a class="nav-link" href="#" id="close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
+          </nav>
+
+         <button class="btn btn-outline-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ba10c2" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+         </button>
+
+        </header><!-- header -->
+
+        <section class="row">
+            <div class="col-md-6">
+                <h2><i class="fa-solid fa-triangle-exclamation"></i> Abertura de Chamado</h2>
+                <p>Preencha o fomulários com todos os <strong>dados</strong> para solucionarmos seu problema.</p>
+
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+                  <input type=hidden name="orgid" value="00D3t000005fEVZ">
+                  <input type=hidden name="retURL" value="https://x1consultoria.000webhostapp.com/finalizaChamado.html">
+                    
+                    
+                    <p>
+                    <label for="company"></label>
+                    <input  id="company" maxlength="80" name="company" size="20" type="text" class="form-control" placeholder="Empresa"/>
+                    </p>
+
+                    <p>
+                    <label for="email"></label>
+                    <input id="email" maxlength="80" name="email" size="20" type="text" class="form-control" placeholder="Email"/>
+                    </p>
+
+                    <p>
+                    <label for="phone"></label>
+                    <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control" placeholder="Telefone"/>
+                    </p>
+
+                    <p>
+                     <label for="type"></label>
+                      <select  id="type" name="type" class="form-select">
+                        <option value="">Tipo</option>
+                        <option value="AplicativoCelular">Aplicativo para Celular</option>
+                        <option value="AplicativoDesktop">Aplicativo para Desktop</option>
+                     </select>
+                   </p>
+
+                   <p>
+                    <label for="reason"></label>
+                      <select  id="reason" name="reason" class="form-select">
+                        <option value="">Motivo do caso</option>
+                        <option value="AlterarDesign">Alterar Design</option>
+                        <option value="AlterarFuncionalidade">Alterar Funcionalidade</option>
+                        <option value="CorrigirBugs">Correção de Bugs</option>
+                        <option value="MudancaPlataforma">Mudança de Plataforma</option>
+                        <option value="FaltaDeFuncionamento">Falta de Funcionamento</option>
+                        <option value="Tutorial">Pedido de Tutorial</option>
+                    </select>
+                   </p>
+
+                   <p>
+                    <label for="subject"></label>
+                    <input  id="subject" maxlength="80" name="subject" size="20" type="text" class="form-select" placeholder="Assunto"/>
+                   </p> 
+
+                   <p> 
+                    <label for="description"></label>
+                    <textarea name="description" class="form-control" aria-label="With textarea">Descrição...</textarea><br>
+                   </p>
+
+                    <input type="submit" name="submit" class="float-end">
+                
+                </form>
+
+            </div>
+
+            <div class="col-md-6">
+                <div>
+                    <h3>SAC - Serviço de Atendimento ao Cliente</h3>
+                    <p>Preencha o formulário para gerar o <strong>chamado</strong> para seu problema. 
+                      Após o preenchimento <strong>aguarde o retorno</strong> de um de nossos consultores </p>
+                    <p>Estamos disponíveis também em vários outros <strong>canais de atendimento</strong>.</p>
+                  </div>
+
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href=""><i class="fa-brands fa-square-whatsapp fa-xl"></i> +55 11 9.7679 6562</a></li>
+                    <li class="list-group-item"><a href=""><i class="fa-solid fa-square-phone fa-xl"></i> +55 11 3435 8895</a></li>
+                    <li class="list-group-item"><a href=""><i class="fa-brands fa-square-facebook fa-xl"></i> Facebook</a></li>
+                    <li class="list-group-item"><a href=""><i class="fa-brands fa-square-instagram fa-xl"></i> Instagram</a></li>
+                    <li class="list-group-item"><a href=""><i class="fa-brands fa-square-twitter fa-xl"></i> Twitter</a></li>
+                  </ul>
+
+            </div>
+        </section>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small border-top">
+            <p class="mb-1">&copy; 2022–2022<strong> X1 Consultoria </strong></p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">WebSite</a></li>
+              <li class="list-inline-item"><a href="#">Facebook</a></li>
+              <li class="list-inline-item"><a href="#">Instagram</a></li>
+              <li class="list-inline-item"><a href="#">Twitter</a></li>
+            </ul>
+        </footer>
+
+    </main>
+
+    
+    <!-- JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script type="text/javascript">
+
+      var btn = document.querySelector('.btn');
+      var menu = document.getElementById('menu-vertical');
+      var close = document.getElementById('close');
+
+
+// Método para mostrar o Menu
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        menu.style.display = 'block';
+      });
+
+// Método para fechar o Menu      
+      close.addEventListener('click', function(e) {
+        e.preventDefault();
+        menu.style.display = 'none';
+      })
+    
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

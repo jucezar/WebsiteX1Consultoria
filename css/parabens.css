@@ -1,0 +1,101 @@
+/* Config Global
+*********************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Staatliches&display=swap');
+
+*, 
+ ::after, 
+   ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteudo
+**************/
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #ff137d, #9710de), url('../img/06-2.png');
+    background-blend-mode: color;
+}
+
+/*
+background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+*/
+
+.parabens__content {
+    max-width: 800px;
+    width: 1000px;
+}
+
+.parabens__content h2 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.parabens__content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    text-align: right;
+}
+
+a {
+    display: block;
+    position: absolute;
+    top: 387px;
+    left: 540px;
+    border: 1px solid #ff137d;
+    border-radius: 30px;
+    padding: .1em;
+    margin-top: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: .8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ff137d;
+    width: 210px;
+    color: #fff;
+    transition: .3s;
+    z-index: 2000;
+}
+
+a:hover {
+    border: 1px solid #9710de;
+    background-color: #9710de;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+strong {
+    color: #fa5ca3;
+}
+
+.parabens__img {
+    position: relative;
+    max-width: 1350px;
+    width: 790px;
+    height: 500px;
+    z-index: 1000;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
